@@ -1,0 +1,17 @@
+# development and production set to use postgresql
+default: &default
+  adapter: postgresql
+  username: postgres
+  password: student
+
+development:
+  <<: *default
+  database: project_development
+
+test:
+  <<: *default
+  database: project_test
+
+production:
+  <<: *default
+  database: project_production

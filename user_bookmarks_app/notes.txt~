@@ -1,0 +1,21 @@
+#notes for current tasks
+
+check what searchbox searches: users || bookmarks(global or local)
+route search properly
+
+nav_bar route changes on session  signup = username
+
+link_to method
+
+
+
+model requirements for bookmarks similar to users
+W/ tests for this
+
+!editing an existing user + rspecs
+
+reroute home to signin not signup, later in chapters?
+
+
+
+currently at start of ch7 on project.

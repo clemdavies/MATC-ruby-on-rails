@@ -1,0 +1,13 @@
+<% provide(:title, @title) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <%= render 'shared/user_info' %>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+      <%= render 'user_avatars' %>
+    </section>
+  </aside>
+  <%= render 'user_list' %>
+</div>

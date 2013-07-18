@@ -1,0 +1,16 @@
+FactoryGirl.define do
+  factory :user do
+    sequence(:name)     { |n| "Person #{n}" }
+    sequence(:username) { |n| "Person user #{n}" }
+    sequence(:email)    { |n| "person_#{n}@example.com"}
+    password "foobarr"
+    password_confirmation "foobarr"
+  end
+
+  factory :bookmark do
+    url "factorygirl.com"
+    name  "factory girl"
+    user
+  end
+
+end

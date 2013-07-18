@@ -1,0 +1,27 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+
+      <%= link_to "user bookmarks", root_path, id: "logo" %>
+
+      <nav>
+        <ul class="nav pull-right">
+          <% if signed_in? %>
+            <li>
+              <%= link_to "sign out", signout_path, method: "delete" %>
+            </li>
+            <li>
+              <%= link_to "profile", user_path(current_user) %>
+            </li>
+          <% else %>
+            <li><%= link_to "sign up", signup_path %></li>
+          <% end %>
+
+          <li><%= link_to "help",    help_path %></li>
+          <li><%= link_to "search",    "#" %></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+</header>

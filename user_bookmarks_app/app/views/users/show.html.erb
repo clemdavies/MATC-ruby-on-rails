@@ -1,0 +1,19 @@
+<% provide(:title, @user.username) %>
+<div class="row">
+  <aside class="span">
+    <section>
+      <h1>
+        <%= gravatar_for @user,size: 100 %>
+        <%= @user.username %> | <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+  <% if current_user?(User.find(params[:id])) %>
+  <aside class="span">
+    <section>
+      <%= link_to "edit", edit_user_path(current_user) %>
+    </section>
+  </aside>
+  <% end %>
+
+</div>
